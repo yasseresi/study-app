@@ -6,7 +6,7 @@ import 'package:study_application/firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -20,6 +20,6 @@ class MyApp extends StatelessWidget {
    return GetMaterialApp(
     debugShowCheckedModeBanner: false, 
     home: DataUploadScreen(),
-   );
+   );  
   }
 }
