@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:study_application/bindings/initial_binging.dart';
+import 'package:study_application/configs/themes/app_dark_theme.dart';
 import 'package:study_application/configs/themes/app_light_theme.dart';
-
-
-
 
 import 'routes/app_routes.dart';
 
@@ -22,12 +20,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-  
-   return GetMaterialApp(
-    theme: LightTheme().buildingTheme(),
-    debugShowCheckedModeBanner: false, 
-    // home: const AppIntroductionScreen(), 
-    getPages: AppRoutes.routes(),
-   );  
+    return GetMaterialApp(
+      theme: DarkTheme().buildingDarkTheme(),
+      debugShowCheckedModeBanner: false,
+      // home: const AppIntroductionScreen(),
+      getPages: AppRoutes.routes(),
+    );
   }
 }
