@@ -5,13 +5,16 @@ import 'app_colours.dart';
 
 mixin SubThemeDataMixin {
   TextTheme getTextThemeData() {
-    return GoogleFonts.quicksandTextTheme(const TextTheme(
+    return GoogleFonts.quicksandTextTheme(
+      const TextTheme(
         bodyLarge: TextStyle(
           fontWeight: FontWeight.w400,
         ),
         bodyMedium: TextStyle(
           fontWeight: FontWeight.w400,
-        )));
+        ),
+      ),
+    );
   }
 
   IconThemeData getIconTheme() {

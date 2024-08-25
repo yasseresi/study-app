@@ -32,7 +32,7 @@ class AppIntroductionScreen extends StatelessWidget {
                   color: onSurfaceTextColor,
                   fontWeight: FontWeight.bold,
                 ),
-                textAlign: TextAlign.center,
+            textAlign: TextAlign.center,
                 "This is a study app.You can use it as you want . If you inderstand how it works , you would be able to scale it.With this you will master firebase backend and flutter front End",
               ),
               const SizedBox(

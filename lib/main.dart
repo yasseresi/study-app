@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/route_manager.dart';
 import 'package:study_application/bindings/initial_binging.dart';
 import 'package:study_application/configs/themes/app_dark_theme.dart';
 import 'package:study_application/configs/themes/app_light_theme.dart';
+import 'package:study_application/controllers/theme_controller.dart';
+import 'package:study_application/screens/introduction/introduction.dart';
 
 import 'routes/app_routes.dart';
 
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: DarkTheme().buildingDarkTheme(),
+      theme: Get.find<ThemeController>().darkTheme,
       debugShowCheckedModeBanner: false,
       // home: const AppIntroductionScreen(),
       getPages: AppRoutes.routes(),
