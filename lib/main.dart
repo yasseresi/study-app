@@ -1,16 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/route_manager.dart';
 import 'package:study_application/bindings/initial_binging.dart';
-import 'package:study_application/configs/themes/app_dark_theme.dart';
-import 'package:study_application/configs/themes/app_light_theme.dart';
 import 'package:study_application/controllers/theme_controller.dart';
-import 'package:study_application/screens/introduction/introduction.dart';
 
+import 'firebase_options.dart';
 import 'routes/app_routes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+ await Firebase.initializeApp(
+   options: DefaultFirebaseOptions.currentPlatform,
+ );
   InitialBinging().dependencies();
 
   // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
