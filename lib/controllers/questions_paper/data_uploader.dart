@@ -47,7 +47,7 @@ class DataUploader extends GetxController {
         batch.set(questionPaperRF.doc(paper.id), {
           'title': paper.title,
           'description': paper.description,
-          'image_u rl': paper.imageUrl,
+          'image_url': paper.imageUrl,
           'time_seconds': paper.timeSeconds,
           'questions_count':
               paper.questions == null ? 0 : paper.questions!.length

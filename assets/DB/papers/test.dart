@@ -2,7 +2,7 @@
 //     "id" : "ppr002",
 //     "title" : "Chemistry", 
 //     "image_url" : "",
-//     "Description" : "Basic physics Multiple Choice Questions (MCQ) to practice basic physics quiz answers",
+//     "description" : "Basic physics Multiple Choice Questions (MCQ) to practice basic physics quiz answers",
 //     "time_seconds" : 900,   
 //     "questions": [
 //         {
