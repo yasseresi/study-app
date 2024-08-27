@@ -5,12 +5,11 @@ import 'package:study_application/models/question_paper_model.dart';
 import 'package:study_application/services/firebase_storage_services.dart';
 
 class QuestionPaperController extends GetxController {
-  final allPaperImages = [].obs;
+
   final allPaper = <QuestionPaperModel>[].obs;
   @override
   void onReady() {
     getAllPagers();
-    print(allPaperImages.toString());
     super.onReady();
   }
 
@@ -29,7 +28,7 @@ class QuestionPaperController extends GetxController {
       FirebaseStorageServices _controller = Get.find();
       for (var paper in paperList) {
         final imgUrl = await _controller.getImage(paper.title);
-        print("the image url is : $imgUrl");
+        print("\nthe image url is : $imgUrl \n\n");
         paper.imageUrl = imgUrl!;
 
         // await questionPaperRF.doc(paper.id).update({'imgUrl' : imgUrl});

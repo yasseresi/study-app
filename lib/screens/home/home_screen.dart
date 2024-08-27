@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                   height: 20,
                 );
               },
-              itemCount: _controller.allPaperImages.length),
+              itemCount: _controller.allPaper.length),
         ));
   }
 }
