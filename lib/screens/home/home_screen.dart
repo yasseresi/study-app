@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:study_application/controllers/questions_paper/question_paper_controller.dart';
+import 'package:new_starter/controllers/questions_paper/question_paper_controller.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

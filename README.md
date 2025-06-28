@@ -1,4 +1,4 @@
-# study_application
+# new_starter
 
 A new Flutter project.
 

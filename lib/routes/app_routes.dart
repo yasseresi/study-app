@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:study_application/bindings/initial_binging.dart';
-import 'package:study_application/controllers/questions_paper/question_paper_controller.dart';
-import 'package:study_application/screens/home/home_screen.dart';
-import 'package:study_application/screens/introduction/introduction.dart';
-import 'package:study_application/screens/splash/splash_screen.dart';
+import 'package:new_starter/bindings/initial_binging.dart';
+import 'package:new_starter/controllers/questions_paper/question_paper_controller.dart';
+import 'package:new_starter/screens/home/home_screen.dart';
+import 'package:new_starter/screens/introduction/introduction.dart';
+import 'package:new_starter/screens/splash/splash_screen.dart';
 
 class AppRoutes {
   static List<GetPage> routes() => [

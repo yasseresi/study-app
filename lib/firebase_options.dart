@@ -3,7 +3,6 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
-import 'package:study_application/firebase_ref/firebase_api.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -51,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: androidKey, 
-    appId: '1:637100408056:android:a894b473d93044c0e90f0d',
+    apiKey: 'AIzaSyBK7wkM-HSTr2RPx4yljEl-KZwzLFOyn54',
+    appId: '1:637100408056:android:89a4d85104704702e90f0d',
     messagingSenderId: '637100408056',
     projectId: 'study-app-d1a5c',
     storageBucket: 'study-app-d1a5c.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: iosKey,
-    appId: '1:637100408056:ios:af3a1bfc9c1209a7e90f0d',
+    apiKey: 'AIzaSyBSR95WP7KiPo-jIRwZ_RzeMSGP19QxS-Y',
+    appId: '1:637100408056:ios:896184bcc19e29dbe90f0d',
     messagingSenderId: '637100408056',
     projectId: 'study-app-d1a5c',
     storageBucket: 'study-app-d1a5c.appspot.com',
-    iosBundleId: 'com.example.studyApplication',
+    iosBundleId: 'com.example.newStarter',
   );
 
 }

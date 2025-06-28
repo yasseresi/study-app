@@ -1,18 +1,18 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:study_application/bindings/initial_binging.dart';
-import 'package:study_application/controllers/theme_controller.dart';
-import 'package:study_application/data_upload_screen.dart';
+import 'package:new_starter/bindings/initial_binging.dart';
+import 'package:new_starter/controllers/theme_controller.dart';
+import 'package:new_starter/data_upload_screen.dart';
 
 import 'firebase_options.dart';
 import 'routes/app_routes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
- await Firebase.initializeApp(
-   options: DefaultFirebaseOptions.currentPlatform,
- );
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   InitialBinging().dependencies();
 
   // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: Get.find<ThemeController>().lightTheme,
+      theme: Get.find<ThemeController>().darkTheme,
       debugShowCheckedModeBanner: false,
       getPages: AppRoutes.routes(),
     );

@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:study_application/configs/themes/sub_theme_data_mixin.dart';
+import 'package:new_starter/configs/themes/sub_theme_data_mixin.dart';
 
 const Color primaryDartColorDark = Color(0xff2e3c62); 
 const Color primaryColorDark = Color(0xff99ace1); 

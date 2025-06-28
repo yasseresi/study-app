@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:study_application/configs/themes/app_dark_theme.dart';
-import 'package:study_application/configs/themes/app_light_theme.dart';
-import 'package:study_application/configs/ui_parameters.dart';
+import 'package:new_starter/configs/themes/app_dark_theme.dart';
+import 'package:new_starter/configs/themes/app_light_theme.dart';
+import 'package:new_starter/configs/ui_parameters.dart';
 
 
 const Color onSurfaceTextColor = Colors.white;

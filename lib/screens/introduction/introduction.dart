@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:study_application/widgets/app_circle_button.dart';
+import 'package:new_starter/widgets/app_circle_button.dart';
 import 'package:get/get.dart';
 
 import '../../configs/themes/app_colours.dart';

@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
-import 'package:study_application/firebase_ref/refrences.dart';
-import 'package:study_application/models/question_paper_model.dart';
-import 'package:study_application/services/firebase_storage_services.dart';
+import 'package:new_starter/firebase_ref/refrences.dart';
+import 'package:new_starter/models/question_paper_model.dart';
+import 'package:new_starter/services/firebase_storage_services.dart';
 
 class QuestionPaperController extends GetxController {
 
